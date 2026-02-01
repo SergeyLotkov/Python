@@ -1,0 +1,90 @@
+#ИЗУЧЕНИЕ ПАЙТОН#
+
+Помните, ваш мозг — это не жесткий диск 
+а живая, динамичная система. 
+Ваша задача — не «загрузить» 
+в него данные, а вырастить нейронные сети,
+понимающие и способные применять эти данные.
+
+1. ООП
+2. Сетевые запросы
+3. Базы данных
+4. API
+5. Повторять основы
+6. Английский язык
+
+
+(1) ООП
+(2)Сетевые запросы
+
+
+(3)Базы данных
+(4)API
+(5)Повторять основы
+Постоянная практика, повторять код по видео, делать проекты, создавать архитектуру
+
+
+
+Test Case ID: TC-212
+Title: Successful register
+
+Precondition:
+none
+
+Steps:
+1. Open login page
+2. Enter valid phone number  
+3. get the code and enter 
+4. click "login" button 
+
+Expected result:
+User register 
+
+
+Test Case ID: TC-213
+Title: Successful register without correct phone number
+
+Precondition:
+User is not logined in
+User not has a valid phone number 
+
+Steps:
+1. Open Ozon login page
+2. Enter not valid phone number  
+3. Click "contune" button
+4. Take error "number is not walid" 
+
+Expected result:
+User recived error "number is not walid"
+
+Test Case ID: TC-214
+Title: Successful register without correct verification code 
+
+Precondition:
+User is not logined in
+User has a valid phone number 
+User enter not correct verification code
+
+Steps:
+1. Open Ozon login page
+2. Enter valid phone number  
+3. Click "contune" button
+4. Receive SMS verification code
+5. Enter uncorrect verification code
+6. Receive error "verification code is not correct" 
+
+Expected result:
+User recived error "verification code is not correct"
+User is not logined 
+
+Login page checklist:
+[ ] Page Ozon opens 
+[ ] Page login open
+[ ] Click button "register"
+[ ] Email field accepts valid email
+[ ] User recived message "we push you verification code"
+[ ] User recived verification code
+[ ] Code field is appeared
+[ ] Login button is clickable
+[ ] Error message shown for invalid credentials
+
